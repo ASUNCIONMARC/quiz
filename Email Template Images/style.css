@@ -1,0 +1,222 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+.section{
+  background: var(--normal);
+}
+
+
+.body{
+  background-color: #3D311E;
+  min-height: 100vh;
+  padding-bottom: 10rem;
+  width: 600;
+}
+
+
+.header{
+    background: #F1E6D8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+    max-width: 500rem;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    gap: 5rem;
+    max-width: 500rem;
+}
+
+.header .branding{
+    align-items: center;
+}
+
+.header .headder__button{
+  color: black;
+}
+
+.header .header__nav ul:first-child{
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+}
+
+.header .header__nav ul:last-child{
+  align-items: center;
+}
+
+/* banner */
+.banner{
+    background-color: var(--normal);
+    align-items: center;
+}
+
+.banner .banner__wrapper img{
+  align-items: center;
+  width: 30rem;
+}
+
+.banner .banner__wrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footer{
+    align-items: center;
+  }
+
+  .footer .footer__links{
+    display: flex;
+    flex-direction: row;
+    background: var(--LINKS);
+    text-align: center;
+  }
+
+  .footer .footer__links .LINKS{
+    display: flex;
+    width: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+
+
+    .header .header__nav ul:first-child{
+      color: var(--normal);
+      display: block;
+    }
+
+    .banner .banner__item{
+      display: flex;
+    }
+    .banner .banner__item img{
+      width: 50rem;
+    }
+  }
+
+
+/* REPEATABLE PATTERN */
+:root{
+  --normal:#3D311E;
+  --LINKS:#F1E6D8;
+  --BORDER:#B45F06;
+  --BUTTON:#E69138;
+}
